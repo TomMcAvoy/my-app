@@ -1,0 +1,26 @@
+node_modules
+dist
+src/reportWebVitals.js
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE and editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore ESLint configuration files
+.eslintignore
+.eslintrc
+.eslintrc.json
+.eslintrc.js
+.eslintrc.yaml
+.eslintrc.yml
+
+# Ignore TypeScript build files
+*.tsbuildinfo

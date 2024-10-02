@@ -1,3 +1,3 @@
-// src/index.ts
-const greeting: string = "Hello, TypeScript!";
+export {};
+const greeting = 'Hello, TypeScript!';
 console.log(greeting);
