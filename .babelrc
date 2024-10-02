@@ -1,0 +1,36 @@
+```jsonc
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react",
+        "@babel/preset-typescript"
+    ],
+    "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-runtime"
+    ],
+    "env": {
+        "development": {
+            "plugins": [
+                "react-refresh/babel"
+            ]
+        },
+        "production": {
+            "plugins": [
+                "@babel/plugin-transform-react-inline-elements",
+                "@babel/plugin-transform-react-constant-elements"
+            ]
+        },
+        "test": {
+            "presets": [
+                "@babel/preset-env",
+                "@babel/preset-react",
+                "@babel/preset-typescript"
+            ],
+            "plugins": [
+                "dynamic-import-node"
+            ]
+        }
+    }
+}
