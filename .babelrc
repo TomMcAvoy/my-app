@@ -1,4 +1,3 @@
-```jsonc
 {
     "presets": [
         "@babel/preset-env",
