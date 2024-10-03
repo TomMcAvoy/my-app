@@ -11,6 +11,7 @@
     "web-vitals": "^4.2.3"
   },
   "scripts": {
+    "dependency-check": "dependency-check --project my-app --scan ./ --format HTML --out ./dependency-check-report --exclude './node_modules' --format HTML --out ./dependency-check-report",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
