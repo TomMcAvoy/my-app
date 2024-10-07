@@ -1,8 +1,9 @@
-import * as fs from 'fs';
-import * as path from 'path';
-
-const chatFilePath = './chat.json'; // Replace with the path to your chat file
-const outputDir = 'snippets'; // Directory to save the snippets
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var fs = require("fs");
+var path = require("path");
+var chatFilePath = './chat.json'; // Replace with the path to your chat file
+var outputDir = 'snippets'; // Directory to save the snippets
 
 // Ensure the output directory exists
 if (!fs.existsSync(outputDir)) {
@@ -10,41 +11,43 @@ if (!fs.existsSync(outputDir)) {
 }
 
 // Read the chat file
-const chatContent = fs.readFileSync(chatFilePath, 'utf-8');
-const chatData = JSON.parse(chatContent);
+var chatContent = fs.readFileSync(chatFilePath, 'utf-8');
+var chatData = JSON.parse(chatContent);
 
 // Print the content of the chat file for debugging
 console.log('Chat file content:');
 console.log(chatContent);
 
-// Enhanced regex to identify code snippets
-const snippetRegex = /```[\s\S]*?```/g;
+// Improved regex to identify code snippets
+var snippetRegex = /```(?:\w+)?\n([\s\S]*?)```/g;
 
-let snippetCount = 0;
+var snippetCount = 0;
 
 // Function to extract snippets from text
-const extractSnippets = (text: string): string[] => {
-    const snippets: string[] = [];
-    let match;
-
+var extractSnippets = function (text) {
+    var snippets = [];
+    var match;
     while ((match = snippetRegex.exec(text)) !== null) {
-        snippets.push(match[0]);
+        snippets.push(match[1]);
     }
+
+    // Log the size of the snippets array
+    console.log(`Number of snippets found: ${snippets.length}`);
 
     return snippets;
 };
 
 // Iterate over the chat messages and extract code snippets
-chatData.requests.forEach((request: any) => {
-    const messageText = request.message?.text || '';
+chatData.requests.forEach(function (request) {
+    var messageText = request.message?.text || '';
     console.log(`Processing message: ${messageText}`); // Debugging statement
 
-    const snippets = extractSnippets(messageText);
+    var snippets = extractSnippets(messageText);
 
-    snippets.forEach((snippet) => {
+    snippets.forEach(function (snippet) {
         snippetCount++;
-        const fileName = `snippet${snippetCount}.txt`; // Adjust extension based on language if needed
-        const filePath = path.join(outputDir, fileName);
+        var fileName = `snippet${snippetCount}.txt`; // Adjust extension based on language if needed
+        var filePath = path.join(outputDir, fileName);
 
         // Output the snippet to the console
         console.log('====');

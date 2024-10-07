@@ -14,16 +14,18 @@ var chatData = JSON.parse(chatContent);
 // Print the content of the chat file for debugging
 console.log('Chat file content:');
 console.log(chatContent);
-// Enhanced regex to identify code snippets
-var snippetRegex = /```[\s\S]*?```/g;
+// Improved regex to identify code snippets
+var snippetRegex = /```(?:\w+)?\n([\s\S]*?)```/g;
 var snippetCount = 0;
 // Function to extract snippets from text
 var extractSnippets = function (text) {
     var snippets = [];
     var match;
     while ((match = snippetRegex.exec(text)) !== null) {
-        snippets.push(match[0]);
+        snippets.push(match[1]);
     }
+    // Log the size of the snippets array
+    console.log("Number of snippets found: ".concat(snippets.length));
     return snippets;
 };
 // Iterate over the chat messages and extract code snippets
@@ -34,7 +36,7 @@ chatData.requests.forEach(function (request) {
     var snippets = extractSnippets(messageText);
     snippets.forEach(function (snippet) {
         snippetCount++;
-        var fileName = "snippet".concat(snippetCount, ".ts"); // Adjust extension based on language if needed
+        var fileName = "snippet".concat(snippetCount, ".txt"); // Adjust extension based on language if needed
         var filePath = path.join(outputDir, fileName);
         // Output the snippet to the console
         console.log('====');
