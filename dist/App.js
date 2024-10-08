@@ -1,8 +1,12 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import logo from './logo.svg';
-import './App.css';
-function App() {
-    return (_jsx("div", { className: "App", children: _jsxs("header", { className: "App-header", children: [_jsx("img", { src: logo, className: "App-logo", alt: "logo" }), _jsxs("p", { children: ["Edit ", _jsx("code", { children: "src/App.js" }), " and save to reload."] }), _jsx("a", { className: "App-link", href: "https://reactjs.org", target: "_blank", rel: "noopener noreferrer", children: "Learn React" })] }) }));
-}
-export default App;
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const jsx_runtime_1 = require("react/jsx-runtime");
+const InitializeTreeComponent_1 = __importDefault(require("./InitializeTreeComponent"));
+const App = () => {
+    return ((0, jsx_runtime_1.jsx)("div", Object.assign({ className: "App" }, { children: (0, jsx_runtime_1.jsxs)("header", Object.assign({ className: "App-header" }, { children: [(0, jsx_runtime_1.jsx)("h1", { children: "Welcome to My App" }), (0, jsx_runtime_1.jsx)(InitializeTreeComponent_1.default, {})] })) })));
+};
+exports.default = App;
 //# sourceMappingURL=App.js.map

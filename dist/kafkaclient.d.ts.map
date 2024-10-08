@@ -1,0 +1,1 @@
+{"version":3,"file":"kafkaclient.d.ts","sourceRoot":"","sources":["../src/kafkaclient.ts"],"names":[],"mappings":"AAAA,OAAO,EAAS,kBAAkB,EAAgB,MAAM,SAAS,CAAC;AAClE,OAAO,EAAE,UAAU,EAAE,MAAM,MAAM,CAAC;AA+FlC,iBAAS,eAAe,IAAI,UAAU,CAAC,kBAAkB,CAAC,CA0EzD;AAiBD,OAAO,EAAE,eAAe,EAAE,CAAC"}

@@ -1,3 +1,3 @@
 export default reportWebVitals;
-export function reportWebVitals(onPerfEntry?: (entry: PerformanceEntry) => void): void;
+declare function reportWebVitals(onPerfEntry: any): void;
 //# sourceMappingURL=reportWebVitals.d.ts.map

@@ -1,1 +1,1 @@
-{"version":3,"file":"App.d.ts","sourceRoot":"","sources":["../src/App.js"],"names":[],"mappings":";AAGA,gEAmBC"}
+{"version":3,"file":"App.d.ts","sourceRoot":"","sources":["../src/App.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAG1B,QAAA,MAAM,GAAG,EAAE,KAAK,CAAC,EAShB,CAAC;AAEF,eAAe,GAAG,CAAC"}

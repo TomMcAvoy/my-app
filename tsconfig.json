@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
+    "target": "ES6",
     "module": "commonjs",
-    "target": "ES2022",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -26,7 +26,14 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "pretty": true,
+    "noEmitOnError": true,
+    "baseUrl": "./",
+    "listFiles": false, // Add this line
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"]

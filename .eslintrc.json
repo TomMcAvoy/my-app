@@ -28,7 +28,7 @@
   },
   "env": {
     "browser": true,
-    "es2021": true,
+    "es2017": true,
     "jest": true
   }
   // Remove this line if not needed
