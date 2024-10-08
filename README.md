@@ -1,6 +1,11 @@
 <<<<<<< HEAD
 # my-app
-Building a distributed hybrid structure with concurrency to redis using redlock and journal logging  the idea is to build a highbrid structure allowing traversal and all those best computer science courses . Then build the mearn stack as first stage . 
+Building a distributed hybrid structure with concurrency to redis using redlock and journal logging  the idea is to build a hybrid structure allowing traversal and all those best computer science courses . Then build the mearn stack as first stage. Communications inplement kafka - node are encrpted into JWE   - keys rotated , multiple keys for historic versioning authentication and authorization controlled by from end api gateway  - express gateway using oidc .
+Writing generic AVL tree uuid, any  allows us to build datastructure expandable to any use case 
+so essentally we have an expandable datastructure . AVL in local cache ,  kafka partitioned to process owner  and redis 
+backing up the AVL tree ... simple matter to switch data structures to DAG or UDAG if needed - all records encrypted with one way pad  - data in transit doubly encrypted .  Analytics data feed via same system for metric and telemetry 
+that the beautiful thing about decorators and generics ... use case -- financials , big data analysis , credit card processing ... you name it an any is an any
+
 =======
 # Getting Started with Create React App
 
