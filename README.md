@@ -1,10 +1,17 @@
 <<<<<<< HEAD
 # my-app
-Building a distributed hybrid structure with concurrency to redis using redlock and journal logging  the idea is to build a hybrid structure allowing traversal and all those best computer science courses . Then build the mearn stack as first stage. Communications inplement kafka - node are encrpted into JWE   - keys rotated , multiple keys for historic versioning authentication and authorization controlled by from end api gateway  - express gateway using oidc .
-Writing generic AVL tree uuid, any  allows us to build datastructure expandable to any use case 
-so essentally we have an expandable datastructure . AVL in local cache ,  kafka partitioned to process owner  and redis 
-backing up the AVL tree ... simple matter to switch data structures to DAG or UDAG if needed - all records encrypted with one way pad  - data in transit doubly encrypted .  Analytics data feed via same system for metric and telemetry 
-that the beautiful thing about decorators and generics ... use case -- financials , big data analysis , credit card processing ... you name it an any is an any
+
+Our goal is to build a distributed hybrid architecture with concurrency control using Redlock and journal logging. This architecture will support efficient traversal and incorporate best practices from computer science. The initial phase involves developing a MEAN stack application.
+
+Key Components:
+Concurrency Control: Utilize Redlock for distributed locking to ensure data consistency across Redis.
+Journal Logging: Implement journal logging for reliable data recovery and auditing.
+MEAN Stack: Develop the initial application using MongoDB, Express, Angular, and Node.js.
+Kafka Integration: Use Kafka for communication between services. Messages will be encrypted into JSON Web Encryption (JWE) format, with key rotation and multiple keys for historical versioning.
+Authentication and Authorization: Controlled via an API gateway (Express Gateway) using OpenID Connect (OIDC).
+Data Structures: Implement a generic AVL tree with UUIDs, allowing for an expandable data structure adaptable to various use cases. The AVL tree will be cached locally, with Kafka partitioned by process owner and Redis backing up the AVL tree.
+Encryption: All records will be encrypted using a one-way pad, with data in transit doubly encrypted.
+Analytics and Telemetry: The same system will be used for metrics and telemetry, leveraging decorators and generics for flexibility.
 
 =======
 # Getting Started with Create React App
