@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Whitestartups multi-tenant portal
 
 Objectives:
