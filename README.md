@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# my-app
+# Whitestartups multi-tenant portal
 
 Objectives:
 
