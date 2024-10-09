@@ -3,7 +3,7 @@
 
 Objectives:
 
-Just a few requirements for my-app project : havent decided what to name it yet
+Just a few requirements for my-app project : which needs a name -  WSSI Multi-Tenant Portal
 
 1. Build a distributed hybrid architecture with concurrency control , high availability , guaranteed message delivery of encrypted application complex data  .This architecture will support efficient traversal and incorporate best practices from computer science datastruture techniques . The initial phase involves building an integrated highspeed actors allowing ecrypted digital transmission processes .
 
@@ -84,7 +84,7 @@ Graceful Degradation: Design the system to degrade gracefully in the event of lo
 Summary
 This architecture provides a flexible, secure, and scalable foundation capable of adapting to various data structures and use cases. By leveraging state-of-the-art technologies and addressing cross-cutting concerns, we can build a robust system suitable for a wide range of industry applications. The inclusion of real-time concurrency control using both local mutex locks and Redlock ensures data integrity and consistency across distributed systems.
 
-Key Components:
+
 Key Components
 Concurrency Control: Utilize Redlock for distributed locking to ensure data consistency across Redis. Additionally, implement local mutex locks to manage concurrent access to shared resources, ensuring data integrity and preventing race conditions.
 Journal Logging: Implement journal logging for reliable data recovery and auditing.
@@ -132,16 +132,14 @@ Excerpt from Active File file:///Users/user/Downloads/react-app-wssi/my-app/src/
 Summary
 This architecture provides a flexible, secure, and scalable foundation capable of adapting to various data structures and use cases. By leveraging state-of-the-art technologies and addressing cross-cutting concerns, we can build a robust system suitable for a wide range of industry applications. The inclusion of real-time concurrency control using both local mutex locks and Redlock ensures data integrity and consistency across distributed systems.
 
-node
-writeRecords
-
 Concurrency Control: Utilize Redlock for distributed locking to ensure data consistency across Redis.
 Journal Logging: Implement journal logging for reliable data recovery and auditing.
-MEAN Stack: Develop the initial application using MongoDB, Express, Angular, and Node.js.
+MERN  Stack: Develop the initial application using MongoDB, Express, React , and Node.js
+.
 Kafka Integration: Use Kafka for communication between services. Messages will be encrypted into JSON Web Encryption (JWE) format, with key rotation and multiple keys for historical versioning.
 Authentication and Authorization: Controlled via an API gateway (Express Gateway) using OpenID Connect (OIDC).
 Data Structures: Implement a generic AVL tree with UUIDs, allowing for an expandable data structure adaptable to various use cases. The AVL tree will be cached locally, with Kafka partitioned by process owner and Redis backing up the AVL tree.
-Encryption: All records will be encrypted using a one-way pad, with data in transit doubly encrypted.
+Encryption: All records will be encrypted using a two-way pad, with data in transit doubly encrypted.
 Analytics and Telemetry: The same system will be used for metrics and telemetry, leveraging decorators and generics for flexibility.
 
 =======
